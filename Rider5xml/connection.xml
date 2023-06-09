@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connections>
+	<connection id="wfd5_sn2"   uri="ipbusudp-2.0://192.168.1.133:50001" address_table="file://address_table.xml" />
+	<connection id="wfd5_sn3"   uri="ipbusudp-2.0://192.168.1.134:50001" address_table="file://address_table.xml" />
+	<connection id="amc13" uri="ipbusudp-2.0://192.168.1.189:50001" address_table="file://AMC13_AddressTable_K7.xml" />
+</connections>

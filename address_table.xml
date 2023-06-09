@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<node id="TOP">
+    <node id="status" address="0x100" mode="incremental" size="20">
+        <node id="reg00" address="0x0"  permission="r"/>
+        <node id="reg01" address="0x1"  permission="r"/>
+        <node id="reg02" address="0x2"  permission="r"/>
+        <node id="reg03" address="0x3"  permission="r"/>
+        <node id="reg04" address="0x4"  permission="r"/>
+        <node id="reg05" address="0x5"  permission="r"/>
+        <node id="reg06" address="0x6"  permission="r"/>
+        <node id="reg07" address="0x7"  permission="r"/>
+        <node id="reg08" address="0x8"  permission="r"/>
+        <node id="reg09" address="0x9"  permission="r"/>
+        <node id="reg10" address="0xa"  permission="r"/>
+        <node id="reg11" address="0xb"  permission="r"/>
+        <node id="reg12" address="0xc"  permission="r"/>
+        <node id="reg13" address="0xd"  permission="r"/>
+        <node id="reg14" address="0xe"  permission="r"/>
+        <node id="reg15" address="0xf"  permission="r"/>
+        <node id="reg16" address="0x10" permission="r"/>
+        <node id="reg17" address="0x11" permission="r"/>
+        <node id="reg18" address="0x12" permission="r"/>
+        <node id="reg19" address="0x13" permission="r"/>
+        <node id="reg20" address="0x14" permission="r"/>
+        <node id="reg21" address="0x15" permission="r"/>
+        <node id="reg22" address="0x16" permission="r"/>
+        <node id="reg23" address="0x17" permission="r"/>
+        <node id="reg24" address="0x18" permission="r"/>
+        <node id="reg25" address="0x19" permission="r"/>
+        <node id="reg26" address="0x1a" permission="r"/>
+        <node id="reg27" address="0x1b" permission="r"/>
+        <node id="reg28" address="0x1c" permission="r"/>
+    </node>
+    <node id="ctrl" address="0x80">
+    	<node id="rst"            mask="0x00000001" permission="w" />
+	<node id="async_mode"     mask="0x00000002" permission="rw"/>
+	<node id="reprog_channel" mask="0x00000004" permission="w" />
+	<node id="reprog_golden"  mask="0x00000008" permission="w" />
+	<node id="reprog_master"  mask="0x00000010" permission="w" />
+	<node id="enable0"        mask="0x00000020" permission="rw"/>
+	<node id="enable1"        mask="0x00000040" permission="rw"/>
+	<node id="enable2"        mask="0x00000080" permission="rw"/>
+	<node id="enable3"        mask="0x00000100" permission="rw"/>
+	<node id="enable4"        mask="0x00000200" permission="rw"/>
+	<node id="endian"         mask="0x00000400" permission="rw"/>
+	<node id="trig_setting0"  mask="0x00000800" permission="rw"/>
+	<node id="trig_setting1"  mask="0x00001000" permission="rw"/>
+	<node id="trig_setting2"  mask="0x00002000" permission="rw"/>
+	<node id="ttc_loopback"   mask="0x00004000" permission="rw"/>
+	<node id="ext_trig_pulse" mask="0x00008000" permission="rw"/>
+	<node id="async_type"     mask="0x00010000" permission="rw"/>
+	<node id="accept_pulses"  mask="0x00020000" permission="rw"/>
+	<node id="ttc_freq_rst"   mask="0x00040000" permission="rw"/>
+    </node>
+    <node id="thres" address="0x80">
+        <node id="data_corrupt"  address="0x1"/>
+	<node id="unknown_ttc"   address="0x2"/>
+	<node id="ddr3_overflow" address="0x3"/>
+    </node>
+    <node id="delay" address="0x80">
+        <node id="trigger" address="0x4"/>
+    </node>
+    <node id="wo" address="0x2000">
+	<node id="i2c_addr_rst" mask="0x1" permission="w"/>
+    </node>
+    <node id="axi" address="0x4000">
+        <node id="chan0" address="0x0" mode="port" size="128"/>
+	<node id="chan1" address="0x2" mode="port" size="128"/>
+	<node id="chan2" address="0x4" mode="port" size="128"/>
+	<node id="chan3" address="0x6" mode="port" size="128"/>
+	<node id="chan4" address="0x8" mode="port" size="128"/>
+    </node>
+    <node id="flash" address="0x6000">
+        <node id="wbuf"   address="0x000" mode="incremental" size="0x80" permission="w"/>
+	<node id="wbuf+1" address="0x001" mode="incremental" size="0x7f" permission="w"/>
+	<node id="rbuf"   address="0x080" mode="incremental" size="0x80" permission="r"/>
+	<node id="cmd"    address="0x100"                                permission="w"/>
+    </node>
+    <node id="aurora" address="0x1000000">
+    	<node id="chan0" module="file://aurora_table.xml" address="0x000000"/>
+    	<node id="chan1" module="file://aurora_table.xml" address="0x100000"/>
+    	<node id="chan2" module="file://aurora_table.xml" address="0x200000"/>
+    	<node id="chan3" module="file://aurora_table.xml" address="0x300000"/>
+    	<node id="chan4" module="file://aurora_table.xml" address="0x400000"/>
+	<node id="clksynth" address="0x500000">
+            <node id="reset" address="0x00000"/>
+	    <node id="reg00" address="0x00001"/>
+            <node id="reg01" address="0x00002"/>
+            <node id="reg02" address="0x00003"/>
+            <node id="reg03" address="0x00004"/>
+            <node id="reg04" address="0x00005"/>
+            <node id="reg05" address="0x00006"/>
+            <node id="reg06" address="0x00007"/>
+            <node id="reg07" address="0x00008"/>
+            <node id="reg08" address="0x00009"/>
+            <node id="reg09" address="0x0000a"/>
+            <node id="reg10" address="0x0000b"/>
+            <node id="reg11" address="0x0000c"/>
+            <node id="reg12" address="0x0000d"/>
+            <node id="reg13" address="0x0000e"/>
+            <node id="reg14" address="0x0000f"/>
+            <node id="reg15" address="0x00010"/>
+            <node id="reg16" address="0x00011"/>
+            <node id="reg24" address="0x00012"/>
+            <node id="reg25" address="0x00013"/>
+            <node id="reg26" address="0x00014"/>
+            <node id="reg27" address="0x00015"/>
+            <node id="reg28" address="0x00016"/>
+            <node id="reg29" address="0x00017"/>
+            <node id="reg30" address="0x00018"/>
+            <node id="reg31" address="0x00019"/>
+	    <node id="cntrl" address="0x0001a"/>
+	</node>
+	<node id="afedac" address="0x600000">
+            <node id="mode1"  address="0x00000"/>
+            <node id="mode2"  address="0x00001"/>
+            <node id="mode3"  address="0x00002"/>
+            <node id="ldac1"  address="0x00003"/>
+            <node id="ldac2"  address="0x00004"/>
+            <node id="ldac3"  address="0x00005"/>
+            <node id="dcen1"  address="0x00006"/>
+            <node id="dcen2"  address="0x00007"/>
+            <node id="dcen3"  address="0x00008"/>
+            <node id="chana1" address="0x00009"/>
+            <node id="chana2" address="0x0000a"/>
+            <node id="chana3" address="0x0000b"/>
+            <node id="chanb1" address="0x0000c"/>
+            <node id="chanb2" address="0x0000d"/>
+            <node id="chanb3" address="0x0000e"/>
+            <node id="chanc1" address="0x0000f"/>
+            <node id="chanc2" address="0x00010"/>
+            <node id="chanc3" address="0x00011"/>
+            <node id="chand1" address="0x00012"/>
+            <node id="chand2" address="0x00013"/>
+            <node id="chand3" address="0x00014"/>
+            <node id="cntrl"  address="0x0001a"/>
+    	</node>
+    </node>
+</node>

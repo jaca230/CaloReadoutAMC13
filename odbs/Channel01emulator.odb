@@ -1,0 +1,6 @@
+[/Equipment/CaloSimulatorTCPIP01/Settings/Channel01]
+enabled = BYTE : 1
+port nr = DWORD : 51717
+ip addr = STRING : [16] 127.0.0.1
+host name = STRING : [16] fe01
+

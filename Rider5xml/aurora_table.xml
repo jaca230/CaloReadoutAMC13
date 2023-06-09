@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<node id="TOP">
+	<node id="live_status" address="0x0000" permission="r">
+		<node id="channel_up" mask="0x00000001" />
+		<node id="lane_up" mask="0x00000002" />
+		<node id="frame_err" mask="0x00000004" />
+		<node id="hard_err" mask="0x00000008" />
+		<node id="soft_err" mask="0x00000010" />
+		<node id="pll_not_locked" mask="0x00000020" />
+		<node id="tx_resetdone_out" mask="0x00000040" />
+		<node id="rx_resetdone_out" mask="0x00000080" />
+		<node id="link_reset_out" mask="0x00000100" />
+	</node>
+	<node id="loopback" address="0x0001" />
+</node>

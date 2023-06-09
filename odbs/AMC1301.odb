@@ -1,0 +1,2691 @@
+[/Equipment/AMC1301/Common]
+Event ID = WORD : 1
+Trigger mask = WORD : 65535
+Buffer = STRING : [32] BUF01
+Type = INT : 130
+Source = INT : 16777215
+Format = STRING : [8] MIDAS
+Enabled = BOOL : y
+Read on = INT : 1
+Period = INT : 10
+Event limit = DOUBLE : 0
+Num subevents = DWORD : 0
+Log history = INT : 0
+Frontend host = STRING : [32] g2calo0102-data
+Frontend name = STRING : [32] AMC1301
+Frontend file name = STRING : [256] frontend.cpp
+Status = STRING : [256] AMC1301@g2calo0102-data
+Status color = STRING : [32] greenLight
+Hidden = BOOL : n
+Write cache size = INT : 100000
+
+[/Equipment/AMC1301/Statistics]
+Events sent = DOUBLE : 2741673
+Events per sec. = DOUBLE : 24.69135802469136
+kBytes per sec. = DOUBLE : 8270.185834957765
+
+[/Equipment/AMC1301/Settings/TQ01/Rider01/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -2000
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider01/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider01/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider01/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider01/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider02/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider02/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider02/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider02/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider02/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider03/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider03/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider03/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider03/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider03/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider04/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider04/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider04/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider04/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider04/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider05/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider05/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider05/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider05/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider05/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider06/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider06/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider06/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider06/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider06/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider07/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider07/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider07/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider07/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider07/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider08/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider08/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider08/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider08/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider08/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider09/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider09/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider09/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider09/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider09/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider10/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider10/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider10/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider10/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider10/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider11/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider11/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider11/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider11/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider11/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider12/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider12/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider12/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider12/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/Rider12/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ01/GlobalParameters]
+TQ Midas Bank prefix = STRING : [16] C
+TQ map type (0-array,1-enabled) = INT : 0
+GPU T,Q,P bank processing = BOOL : y
+waveform length = INT : 740000
+GPU first sample = INT : 1
+GPU last sample = INT : 740000
+array x-segments = INT : 9
+array y-segments = INT : 6
+island presamples = INT : 8
+island postsamples = INT : 18
+thres type 0-dt,1-sm,2-eg,3-wgt = INT : 2
+global threshold value = INT : 60
++ve(-ve) global thres xing Y(N) = BOOL : y
+use individual thresholds Y(N) = BOOL : n
+pedestal type 0-glbl,1-fbyf = INT : 1
+global pedestal value = INT : 0
+Calo sum time decimation = INT : 64
+GPU H bank processing = BOOL : y
+histo data subtract pedestal = BOOL : n
+histo data time decimation = INT : 30
+histo data first sample index = INT : 100001
+histo data last sample index = INT : 661000
+histo data rebin intervals = INT : 1
+histo data rebin multiplier = INT : 1
+histo data flush period = INT : 4
+histo data flush offset = INT : 0
+histo data by seq num Y(N) = BOOL : n
+run gpu fitter (1 yes, 0 no) = INT : 1
+fitting prescale factor = INT : 1
+minimum fit time = INT : 9
+fit threshold = INT : -1640
+CTAG threshold = INT : -3200
+CTAG time cut = INT : 100000
+T-method Mask = BOOL : y
+T-method Mask first sample = INT : 98500
+T-method Mask last sample = INT : 107000
+T-method Mask Prescale = INT : 100
+Save full calo = BOOL : n
+Save truncated calo = BOOL : y
+Save xtal border = BOOL : y
+Fill type = INT : 1
+T-method prescale = INT : 1
+
+[/Equipment/AMC1301/Settings/TQ02/GlobalParameters]
+TQ Midas Bank prefix = STRING : [16] X
+TQ map type (0-array,1-enabled) = INT : 0
+GPU T,Q,P bank processing = BOOL : n
+waveform length = INT : 660000
+GPU first sample = INT : 1
+GPU last sample = INT : 660000
+array x-segments = INT : 9
+array y-segments = INT : 6
+island presamples = INT : 8
+island postsamples = INT : 16
+thres type 0-dt,1-sm,2-eg,3-wgt = INT : 2
+global threshold value = INT : -300
++ve(-ve) global thres xing Y(N) = BOOL : n
+use individual thresholds Y(N) = BOOL : n
+pedestal type 0-glbl,1-fbyf = INT : 1
+global pedestal value = INT : 0
+Calo sum time decimation = INT : 32
+GPU H bank processing = BOOL : n
+histo data subtract pedestal = BOOL : n
+histo data time decimation = INT : 16
+histo data first sample index = INT : 1
+histo data last sample index = INT : 560000
+histo data rebin intervals = INT : 1
+histo data rebin multiplier = INT : 1
+histo data flush period = INT : 100
+histo data flush offset = INT : 22
+histo data by seq num Y(N) = BOOL : n
+run gpu fitter (1 yes, 0 no) = INT : 1
+fitting prescale factor = INT : 1
+minimum fit time = INT : 9
+fit threshold = INT : 1000
+CTAG threshold = INT : 1000
+CTAG time cut = INT : 40000
+T-method Mask = BOOL : n
+T-method Mask first sample = INT : 0
+T-method Mask last sample = INT : 0
+T-method Mask Prescale = INT : 1
+Save full calo = BOOL : n
+Save truncated calo = BOOL : n
+Save xtal border = BOOL : n
+Fill type = INT : 1
+T-method prescale = INT : 1
+
+[/Equipment/AMC1301/Settings/TQ02/Rider01/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider01/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider01/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider01/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider01/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider02/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider02/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider02/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider02/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider02/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider03/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider03/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider03/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider03/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider03/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider04/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider04/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider04/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider04/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider04/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider05/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider05/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider05/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider05/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider05/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider06/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider06/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider06/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider06/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider06/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider07/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider07/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider07/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider07/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider07/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider08/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider08/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider08/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider08/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider08/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider09/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider09/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider09/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider09/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider09/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider10/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider10/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider10/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider10/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider10/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider11/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider11/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider11/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider11/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider11/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider12/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider12/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider12/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider12/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ02/Rider12/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/GlobalParameters]
+TQ Midas Bank prefix = STRING : [16] T
+TQ map type (0-array,1-enabled) = INT : 0
+GPU T,Q,P bank processing = BOOL : y
+waveform length = INT : 740000
+GPU first sample = INT : 1
+GPU last sample = INT : 740000
+array x-segments = INT : 9
+array y-segments = INT : 6
+island presamples = INT : 8
+island postsamples = INT : 18
+thres type 0-dt,1-sm,2-eg,3-wgt = INT : 4
+global threshold value = INT : 60
++ve(-ve) global thres xing Y(N) = BOOL : y
+use individual thresholds Y(N) = BOOL : n
+pedestal type 0-glbl,1-fbyf = INT : 1
+global pedestal value = INT : 0
+Calo sum time decimation = INT : 64
+GPU H bank processing = BOOL : n
+histo data subtract pedestal = BOOL : y
+histo data time decimation = INT : 60
+histo data first sample index = INT : 100001
+histo data last sample index = INT : 292000
+histo data rebin intervals = INT : 1
+histo data rebin multiplier = INT : 1
+histo data flush period = INT : 1
+histo data flush offset = INT : 1
+histo data by seq num Y(N) = BOOL : n
+run gpu fitter (1 yes, 0 no) = INT : 0
+fitting prescale factor = INT : 1
+minimum fit time = INT : 9
+fit threshold = INT : -1640
+CTAG threshold = INT : -3200
+CTAG time cut = INT : 100000
+T-method Mask = BOOL : y
+T-method Mask first sample = INT : 98500
+T-method Mask last sample = INT : 107000
+T-method Mask Prescale = INT : 100
+Save full calo = BOOL : y
+Save truncated calo = BOOL : n
+Save xtal border = BOOL : n
+Fill type = INT : 1
+T-method prescale = INT : 15
+
+[/Equipment/AMC1301/Settings/TQ03/Rider01/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -2000
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider01/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider01/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider01/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider01/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider02/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider02/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider02/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider02/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider02/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider03/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider03/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider03/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider03/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider03/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider04/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider04/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider04/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider04/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider04/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider05/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider05/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider05/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider05/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider05/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider06/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider06/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider06/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider06/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider06/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider07/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider07/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider07/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider07/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider07/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider08/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider08/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider08/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider08/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider08/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider09/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider09/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider09/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider09/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider09/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider10/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 5
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider10/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 6
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider10/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 7
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider10/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 8
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider10/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 9
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider11/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider11/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 2
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider11/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 3
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider11/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 4
+Det y-segmt (for array map) = INT : 6
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider11/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider12/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider12/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider12/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider12/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ03/Rider12/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/GlobalParameters]
+TQ Midas Bank prefix = STRING : [16] s
+TQ map type (0-array,1-enabled) = INT : 0
+GPU T,Q,P bank processing = BOOL : y
+waveform length = INT : 660000
+GPU first sample = INT : 1
+GPU last sample = INT : 660000
+array x-segments = INT : 1
+array y-segments = INT : 5
+island presamples = INT : 50
+island postsamples = INT : 250
+thres type 0-dt,1-sm,2-eg,3-wgt = INT : 2
+global threshold value = INT : 500
++ve(-ve) global thres xing Y(N) = BOOL : y
+use individual thresholds Y(N) = BOOL : n
+pedestal type 0-glbl,1-fbyf = INT : 1
+global pedestal value = INT : 0
+Calo sum time decimation = INT : 64
+GPU H bank processing = BOOL : n
+histo data subtract pedestal = BOOL : y
+histo data time decimation = INT : 60
+histo data first sample index = INT : 20001
+histo data last sample index = INT : 210020
+histo data rebin intervals = INT : 1
+histo data rebin multiplier = INT : 1
+histo data flush period = INT : 1
+histo data flush offset = INT : 1
+histo data by seq num Y(N) = BOOL : n
+run gpu fitter (1 yes, 0 no) = INT : 0
+fitting prescale factor = INT : 1
+minimum fit time = INT : 9
+fit threshold = INT : -1500
+CTAG threshold = INT : -3200
+CTAG time cut = INT : 20000
+T-method Mask = BOOL : y
+T-method Mask first sample = INT : 98500
+T-method Mask last sample = INT : 107000
+T-method Mask Prescale = INT : 100
+Save full calo = BOOL : y
+Save truncated calo = BOOL : n
+Save xtal border = BOOL : n
+Fill type = INT : 1
+T-method prescale = INT : 1
+
+[/Equipment/AMC1301/Settings/TQ04/Rider01/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider01/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider01/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider01/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider01/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider02/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider02/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider02/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider02/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider02/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider03/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider03/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider03/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider03/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider03/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider04/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider04/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider04/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider04/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider04/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider05/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider05/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider05/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider05/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider05/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider06/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider06/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider06/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider06/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider06/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider07/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider07/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider07/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider07/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider07/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider08/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider08/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider08/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider08/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider08/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider09/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider09/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider09/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider09/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider09/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider10/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider10/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider10/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider10/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider10/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider11/Channel00]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 1
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider11/Channel01]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 2
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider11/Channel02]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 3
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider11/Channel03]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 4
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider11/Channel04]
+Chan used (for enabled map) = BOOL : y
+Det x-segmt (for array map) = INT : 1
+Det y-segmt (for array map) = INT : 5
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider12/Channel00]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider12/Channel01]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider12/Channel02]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider12/Channel03]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/TQ04/Rider12/Channel04]
+Chan used (for enabled map) = BOOL : n
+Det x-segmt (for array map) = INT : 0
+Det y-segmt (for array map) = INT : 0
+threshold value = INT : -200
+positive crossing Y(N) = BOOL : n
+
+[/Equipment/AMC1301/Settings/Link01]
+Enabled = BYTE : 1
+AMC13 SFP IP Address = STRING : [16] 192.168.42.2
+AMC13 SFP Port Number = DWORD : 4660
+
+[/Equipment/AMC1301/Settings/AMC13]
+Header Size (bytes) = DWORD : 4096
+AMC Block Size (bytes) = DWORD : 32768
+Tail Size (bytes) = DWORD : 8
+T1 Firmware Version Required = DWORD : 33087
+T2 Firmware Version Required = DWORD : 46
+T1 Address Table Location = STRING : [65] $GM2DAQ_DIR/address_tables/AMC13XG_T1.xml
+T2 Address Table Location = STRING : [65] $GM2DAQ_DIR/address_tables/AMC13XG_T2.xml
+Fake Data Mode Enabled = BOOL : n
+
+[/Equipment/AMC1301/Settings/Rider01/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider01/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider01/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider01/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider01/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider01/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider02/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider02/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider02/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider02/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider02/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider02/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider03/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider03/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider03/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider03/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider03/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider03/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider04/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider04/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider04/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider04/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider04/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider04/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider05/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider05/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider05/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider05/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider05/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider05/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider06/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider06/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider06/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider06/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider06/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider06/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider07/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider07/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider07/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider07/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider07/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider07/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider08/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider08/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider08/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider08/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider08/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider08/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider09/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider09/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider09/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider09/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider09/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider09/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider10/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider10/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider10/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider10/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider10/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider10/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider11/Board]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider11/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider11/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider11/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider11/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider11/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider12/Board]
+Enabled = BOOL : n
+Frontend Configuration Enabled = BOOL : y
+Address Table Location = STRING : [64] $GM2DAQ_DIR/address_tables/WFD5.xml
+FPGA Firmware Version Required = STRING : [16] 2.6.0
+Digitization Frequency (MHz) = STRING : [8] 800
+Front Panel Clock Enabled = BOOL : y
+Front Panel Clock Frequency = STRING : [8] ttc
+ADC Data Endianness = STRING : [8] little
+Trigger Delay (ns) = DWORD : 100
+Async Mode: Enabled = BOOL : n
+Async Mode: Waveform Length = DWORD : 80
+Async Mode: Waveform Presamples = DWORD : 4
+Trigger Type 1: Enabled = BOOL : y
+Trigger Type 1: Waveform Count = DWORD : 1
+Trigger Type 1: Waveform Length = DWORD : 740000
+Trigger Type 1: Waveform Gap = DWORD : 16
+Trigger Type 2: Enabled = BOOL : y
+Trigger Type 2: Waveform Count = DWORD : 4
+Trigger Type 2: Waveform Length = DWORD : 240
+Trigger Type 2: Waveform Gap = DWORD : 159744
+Trigger Type 3: Enabled = BOOL : y
+Trigger Type 3: Waveform Count = DWORD : 1
+Trigger Type 3: Waveform Length = DWORD : 800
+Trigger Type 3: Waveform Gap = DWORD : 16
+Error Threshold: Corrupt Data = DWORD : 10
+Error Threshold: Unknown TTC = DWORD : 10
+Error Threshold: DDR3 Overflow = DWORD : 7549747
+
+[/Equipment/AMC1301/Settings/Rider12/Channel00]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider12/Channel01]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider12/Channel02]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider12/Channel03]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Rider12/Channel04]
+Enabled = BOOL : y
+Frontend Configuration Enabled = BOOL : y
+FPGA Firmware Version Required = STRING : [16] 2.3.3
+Input Signal Offset = INT : 0
+Input Type = STRING : [16] XTAL
+
+[/Equipment/AMC1301/Settings/Globals]
+Sync = BOOL : n
+Use AMC13 Simulator = BOOL : n
+GPU Device ID = INT : 1
+GPU Device Name Prefix = STRING : [256] tesla
+Send to Event Builder = BOOL : y
+FE Lossless Compression = BOOL : y
+FEBankByBankLosslessCompression = BOOL : n
+Raw Data Store = BOOL : n
+Raw Data Prescale = DWORD : 3000
+Raw Data Prescale Offset = DWORD : 100
+MCH IP Address = STRING : [16] 192.168.1.15
+CCC: FC7 Slot Number (1-12) = INT : 5
+CCC: FMC Location (top, bottom) = STRING : [16] bottom
+CCC: FMC SFP Number (1-8) = INT : 1
+
+[/Equipment/AMC1301/Monitors]
+TCP Buffer Peak = FLOAT : 0.28125
+GPU Buffer Peak = FLOAT : 0.15625
+TCP Fill Number = INT : 2741684
+GPU Fill Number = INT : 2741684
+Midas Fill Number = INT : 2741684
+Operation State = INT : 1
+TCP Thread Status = INT : 1
+GPU Thread Status = INT : 1
+

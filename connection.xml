@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connections>
+	<connection id="wfd_0"   uri="chtcp-2.0://g2be:10203?target=192.168.26.37:50001" address_table="file://address_table.xml" />
+	<connection id="wfd_1"   uri="chtcp-2.0://g2be:10203?target=192.168.3.9:50001" address_table="file://address_table.xml" />
+	<connection id="amc13" uri="chtcp-2.0://g2be:10203?target=192.168.26.108:50001" address_table="file://AMC13_AddressTable_K7.xml" />
+</connections>

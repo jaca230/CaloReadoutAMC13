@@ -1,0 +1,25 @@
+[/Equipment/CaloReadoutTCPIP01/Settings/Channel01]
+enabled = BYTE : 1
+port nr = DWORD : 51722
+ip addr = STRING : [16] 192.168.2.101
+host name = STRING : [16] fe01
+header size (bytes) = DWORD : 128
+data size (bytes) = DWORD : 256
+tail size (bytes) = DWORD : 32
+raw data max size (bytes) = DWORD : 512
+write Monte Carlo data = BYTE : 0
+
+[/Equipment/CaloReadoutTCPIP01/Settings/Channel02]
+enabled = BYTE : 0
+port nr = DWORD : 51719
+ip addr = STRING : [16] 192.168.2.201
+host name = STRING : [16] fe01
+header size (bytes) = DWORD : 32
+data size (bytes) = DWORD : 4096
+tail size (bytes) = DWORD : 32
+raw data max size (bytes) = DWORD : 512
+write Monte Carlo data = BYTE : 0
+
+[/Equipment/CaloReadoutTCPIP01/Settings/Globals]
+sync = BOOL : n
+

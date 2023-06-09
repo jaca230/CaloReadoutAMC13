@@ -1,0 +1,54 @@
+[/Equipment/CaloReadoutAMC1301/Settings/Globals]
+sync = BOOL : n
+TQ methods = BOOL : y
+raw data store = BOOL : n
+raw data prescale = DWORD : 10
+raw data prescale offset = DWORD : 0
+histogram data store = BOOL : y
+histogram data flush = DWORD : 100
+histogram data flush offset = DWORD : 1
+
+[/Equipment/CaloReadoutAMC1301/Settings/Channel01]
+enabled = BYTE : 1
+port nr = DWORD : 51721
+ip addr = STRING : [16] 192.168.2.101
+host name = STRING : [16] fe01
+header size (bytes) = DWORD : 128
+data size (bytes) = DWORD : 4096
+tail size (bytes) = DWORD : 32
+raw data max size (bytes) = DWORD : 512
+
+[/Equipment/CaloReadoutAMC1301/Settings/Channel02]
+enabled = BYTE : 1
+port nr = DWORD : 51722
+ip addr = STRING : [16] 192.168.2.101
+host name = STRING : [16] fe01
+header size (bytes) = DWORD : 128
+data size (bytes) = DWORD : 4096
+tail size (bytes) = DWORD : 32
+raw data max size (bytes) = DWORD : 512
+
+[/Equipment/CaloReadoutAMC1301/Common]
+Event ID = WORD : 1
+Trigger mask = WORD : 65535
+Buffer = STRING : [32] SYSTEM
+Type = INT : 2
+Source = INT : 16777215
+Format = STRING : [8] MIDAS
+Enabled = BOOL : y
+Read on = INT : 1
+Period = INT : 1
+Event limit = DOUBLE : 0
+Num subevents = DWORD : 0
+Log history = INT : 0
+Frontend host = STRING : [32] fe01
+Frontend name = STRING : [32] CaloReadoutAMC1301
+Frontend file name = STRING : [256] frontend.cpp
+Status = STRING : [256] CaloReadoutAMC1301@fe01
+Status color = STRING : [32] #00FF00
+
+[/Equipment/CaloReadoutAMC1301/Statistics]
+Events sent = DOUBLE : 0
+Events per sec. = DOUBLE : 0
+kBytes per sec. = DOUBLE : 0
+

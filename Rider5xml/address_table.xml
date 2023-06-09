@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<node id="TOP">
+        <node id="status" address="0x00000000" permission="r"/>
+        <node id="ctrl" address="0x00000001">
+        	<node id="rst" mask="0x1" permission="w"/>
+        	<node id="done1" mask="0x2" permission="w"/>
+        	<node id="done2" mask="0x4" permission="w"/>
+        	<node id="done3" mask="0x8" permission="w"/>
+        	<node id="done4" mask="0x10" permission="w"/>
+        	<node id="done5" mask="0x20" permission="w"/>
+        </node>
+        <node id="ram" address="0x00001000" mode="block" size="1024"/>
+        <node id="wo" address="0x00002000">
+        	<node id="trigger" mask="0x1" permission="w"/>
+        </node>
+        <node id="counters" address="0x00003000">
+        	<node id="ipbus">
+        		<node id="tx_packets" address="0x0"/>
+        		<node id="rx_packets" address="0x1"/>
+        	</node>
+        	<node id="eth">
+        		<node id="phy">
+        			<node id="rudi_invalid" address="0x2"/>
+        			<node id="rxdisperr" address="0x3"/>
+        			<node id="rxnotintable" address="0x4"/>
+        		</node>
+        	</node>
+        	<node id="daq_almost_full" address="0x5"/>
+        	<node id="triggers" address="0x6"/>
+		<node id="aurora">
+               	        <node id="frame_err" address="0x7"/>
+               	        <node id="hard_err" address="0x8"/>
+               	        <node id="soft_err" address="0x9"/>
+               	        <node id="channel_up" address="0xA"/>
+               	        <node id="lane_up" address="0xB"/>
+               	        <node id="pll_not_locked" address="0xC"/>
+               	        <node id="tx_resetdone_out" address="0xD"/>
+               	        <node id="rx_resetdone_out" address="0xE"/>
+               	        <node id="link_reset_out" address="0xF"/>
+		</node>
+        </node>
+        <node id="axi" address="0x4000">
+	        <node id="chan0" address="0x0" mode="port" size="128"/>
+		<node id="chan1" address="0x2" mode="port" size="128"/>
+		<node id="chan2" address="0x4" mode="port" size="128"/>
+		<node id="chan3" address="0x6" mode="port" size="128"/>
+		<node id="chan4" address="0x8" mode="port" size="128"/>
+	</node>
+        <node id="daq">
+	    	<node id="header" address="0x5000" mode="port" permission="w"/>
+	    	<node id="data" address="0x5001" mode="port" permission="w"/>
+	    	<node id="trailer" address="0x5002" mode="port" permission="w"/>
+	    </node>
+	    <node id="aurora" address="0x01000000">
+	    	<node id="chan0" module="file://aurora_table.xml" address="0x000000" />
+	    	<node id="chan1" module="file://aurora_table.xml" address="0x100000" />
+	    	<node id="chan2" module="file://aurora_table.xml" address="0x200000" />
+	    	<node id="chan3" module="file://aurora_table.xml" address="0x300000" />
+	    	<node id="chan4" module="file://aurora_table.xml" address="0x400000" />
+	    </node>
+</node>
