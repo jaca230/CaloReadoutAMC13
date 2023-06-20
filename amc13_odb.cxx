@@ -38,9 +38,18 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <unordered_set>
+
 #include <midas.h>
 #include <mfe.h>
 #include "amc13_odb.h"
+#include <pugixml.hpp>
+#include <odbxx.h>
+
 
 #ifdef DEBUG                                                                                               
 #define dbprintf(...) printf(__VA_ARGS__)                                                                  
@@ -59,6 +68,154 @@ RIDER_MAP_TO_CALO_ODB rider_map_to_calo_odb[AMC13_RIDER_NUM][RIDER_CHAN_NUM][TQM
 AMC13_AMC13_ODB amc13_amc13_odb;
 AMC13_RIDER_ODB amc13_rider_odb[AMC13_RIDER_NUM];
 AMC13_FC7_ODB amc13_fc7_odb[AMC13_RIDER_NUM];
+
+//CONSTANTS
+const char* const FRONTEND_ODB_CONFIGURATION_XML = "frontends_odb_configuration.xml"; //configuration file for frontend odb settings
+
+std::vector<std::string> generateStringListFromXml(const std::string& xmlFilePath, int frontendIndex, int maxIterations, int& errorCode) {
+    std::vector<std::string> stringList;
+    errorCode = 0;
+
+    try {
+        pugi::xml_document doc;
+        pugi::xml_parse_result result = doc.load_file(xmlFilePath.c_str());
+
+        if (!result) {
+            std::cerr << "Error parsing XML file: " << result.description() << std::endl;
+            errorCode = 1; // Set error code for XML parsing failure
+            return stringList;
+        }
+
+        pugi::xml_node frontend = doc.child("frontend");
+        int frontendIterations = 0;
+
+        while (frontend && frontendIterations < maxIterations) {
+            int id = frontend.attribute("id").as_int();
+
+            if (id == frontendIndex) {
+                break;
+            }
+
+            frontend = frontend.next_sibling("frontend");
+            frontendIterations++;
+        }
+
+        if (!frontend) {
+            std::cout << "Frontend with the specified index not found." << std::endl;
+            errorCode = 2; // Set error code for frontend not found
+            return stringList;
+        }
+
+        pugi::xml_node slot = frontend.child("slot");
+        int slotIterations = 0;
+
+        while (slot && slotIterations < maxIterations) {
+            int slotId = slot.attribute("id").as_int();
+            std::string slotType = slot.attribute("type").as_string();
+            std::string slotString;
+
+            if (slotType == "FC7") {
+                slotString = "FC7-";
+                if (slotId < 10) {
+                    slotString += "0";
+                }
+                slotString += std::to_string(slotId);
+            }
+            else if (slotType == "Rider" || slotType == "WFD") {
+                slotString = "Rider";
+                if (slotId < 10) {
+                    slotString += "0";
+                }
+                slotString += std::to_string(slotId);
+            }
+
+            stringList.push_back(slotString);
+
+            slot = slot.next_sibling("slot");
+            slotIterations++;
+        }
+
+        // Add additional entries
+        stringList.push_back("Globals");
+        stringList.push_back("Link01");
+        stringList.push_back("AMC13");
+        for (int i = 1; i <= TQMETHOD_MAX; i++) {
+            std::string tqString = "TQ0" + std::to_string(i);
+            stringList.push_back(tqString);
+        }
+    } catch (const std::exception& e) {
+        std::cerr << "Exception: " << e.what() << std::endl;
+        errorCode = 4; // Set error code for XML exception
+    }
+
+    return stringList;
+}
+std::vector<std::string> generateSubkeyListFromOdb(const std::string& filepath, int& errorCode) {
+    std::vector<std::string> subkeyList;
+    errorCode = 0;
+
+    try {
+        // Grab a bit of the ODB
+        midas::odb exp(filepath);
+
+        for (midas::odb& subkey : exp) {
+            subkeyList.push_back(subkey.get_name());
+        }
+    } catch (const std::exception& e) {
+        std::cerr << "Exception: " << e.what() << std::endl;
+        errorCode = 3; // Set error code for ODB exception
+    }
+
+    return subkeyList;
+}
+bool areExactSameEntries(const std::vector<std::string>& list1, const std::vector<std::string>& list2) {
+    if (list1.size() != list2.size()) {
+        return false;
+    }
+
+    std::unordered_set<std::string> set1(list1.begin(), list1.end());
+    std::unordered_set<std::string> set2(list2.begin(), list2.end());
+
+    return set1 == set2;
+}
+bool isSubset(const std::vector<std::string>& list1, const std::vector<std::string>& list2) {
+    std::unordered_set<std::string> set1(list1.begin(), list1.end());
+    std::unordered_set<std::string> set2(list2.begin(), list2.end());
+
+    for (const std::string& entry : set1) {
+        if (set2.find(entry) == set2.end()) {
+            return false;
+        }
+    }
+
+    return true;
+}
+std::vector<std::string> getMissingEntries(const std::vector<std::string>& list1, const std::vector<std::string>& list2) {
+    std::unordered_set<std::string> set1(list1.begin(), list1.end());
+    std::unordered_set<std::string> set2(list2.begin(), list2.end());
+
+    std::vector<std::string> missingEntries;
+
+    for (const std::string& entry : set2) {
+        if (set1.find(entry) == set1.end()) {
+            missingEntries.push_back(entry);
+        }
+    }
+
+    return missingEntries;
+}
+std::vector<std::string> filterRiders(const std::vector<std::string>& xmlSettings) {
+    std::vector<std::string> ridersList;
+
+    for (const std::string& entry : xmlSettings) {
+        if (entry.find("Rider") != std::string::npos) {
+            ridersList.push_back(entry);
+        }
+    }
+
+    return ridersList;
+}
+
 
 char *replace_str(const char *str,const char *orig,const char *rep) {
   static char buffer[4096];
@@ -224,7 +381,33 @@ INT amc13_ODB_set()
   
   dbprintf("%s(%d): %s sync %d\n", __func__, __LINE__, str, amc13_settings_odb.sync); 
 
-  if (frontend_index != 0) {
+  int maxIterations = 1000;
+  int errorCode = 0;
+  std::vector<std::string> xml_settings = generateStringListFromXml(FRONTEND_ODB_CONFIGURATION_XML, frontend_index, maxIterations,errorCode);
+  if (errorCode != 0 ) {
+    return FE_ERR_ODB;
+  }
+  sprintf(str,"/Equipment/AMC13%02d/Settings",frontend_index);
+  std::vector<std::string> odb_settings = generateSubkeyListFromOdb(str,errorCode);
+  if (errorCode != 0 ) {
+    return FE_ERR_ODB;
+  }
+
+  if (xml_settings.empty()) {
+      std::cout << "No slots found for the specified frontend index." << std::endl;
+  }
+
+  //There is nothing left to do if the settings are the same as we want them to be.
+  //This assumes the settings are populated correctly. But even if they aren't we can just change
+  //The .xml file to make them popualte correctly (this is a hack, but so is this whole project)
+  if (areExactSameEntries(xml_settings,odb_settings)) {
+    return SUCCESS;
+  }
+  
+  //We only update the settings if odb_settings does not contain everything in xml_settings
+  //NOTE: For some reason, odb_settings always contains 12 riders and 12 FC7s, it might have something to do with amc13_ODB_init()
+  //      Which is called before amc13_ODB_set() in the frontend. It doesn't seem to really matter for this code's purpose though.
+  if (!isSubset(xml_settings,odb_settings)) {
     int itq;
     for (itq = 0; itq < TQMETHOD_MAX; itq++) {
       sprintf(str,"/Equipment/AMC13%02d/Settings/TQ%02d/GlobalParameters",frontend_index,itq+1);
@@ -244,9 +427,9 @@ INT amc13_ODB_set()
       }
       char gpux_rep[8];
       if (itq == 0) {
-	      sprintf(gpux_rep, "%s", "1");
+        sprintf(gpux_rep, "%s", "1");
       } else {
-	      sprintf(gpux_rep, "%s", "0");
+        sprintf(gpux_rep, "%s", "0");
       }
       status = db_check_record(hDB, 0, str, replace_str(replace_str(replace_str(TQ_PARAMETERS_ODB_STR, "__gpu1__", gpux_rep), "__gpu2__", gpux_rep), "__prefix__", prefix_rep), TRUE);
       if (status != DB_SUCCESS) {
@@ -265,7 +448,7 @@ INT amc13_ODB_set()
       db_set_record(hDB, hKey, &tq_parameters_odb[itq], sizeof(TQ_PARAMETERS_ODB), 0);
       
       dbprintf("%s(%d): %s TQ enabled %d\n", __func__, __LINE__, str, tq_parameters_odb[itq].TQ_on); 
-  
+
       int ir, ic;
         for(ir = 0; ir < AMC13_RIDER_NUM; ir++){
           for(ic = 0; ic < RIDER_CHAN_NUM; ic++){
@@ -315,59 +498,56 @@ INT amc13_ODB_set()
         }
 
       } // loop over TQ methods
-  } // if non-zero frontend index
+          
+    for (i = 0; i < AMC13_LINK_NUM; i++) {
+      sprintf(str,"/Equipment/AMC13%02d/Settings/Link%02d",frontend_index,i+1);
+      
+      // create ODB structure /Equipment/%s/Settings/Link%02d if doesn't exist
+      char subnet_rep[8];
+      if (frontend_index == 26) {
+        sprintf(subnet_rep, "%i", 2);
+      } else {
+        sprintf(subnet_rep, "%i", (frontend_index % 2) + 1);
+      }
+      status = db_check_record(hDB, 0, str, replace_str(AMC13_LINK_ODB_STR, "__subnet__", subnet_rep), TRUE);
+      if (status != DB_SUCCESS) {
+        cm_msg(MERROR, __FILE__, "Cannot create [%s] entry in ODB, err = %i", str, status);
+        ss_sleep(3000);
+      }
         
-  for (i = 0; i < AMC13_LINK_NUM; i++) {
-    sprintf(str,"/Equipment/AMC13%02d/Settings/Link%02d",frontend_index,i+1);
-    
-    // create ODB structure /Equipment/%s/Settings/Link%02d if doesn't exist
-    char subnet_rep[8];
-    if (frontend_index == 26) {
-      sprintf(subnet_rep, "%i", 2);
-    } else {
-      sprintf(subnet_rep, "%i", (frontend_index % 2) + 1);
+      // returns key handle "hDB" to ODB name "str" for fast access 
+      status = db_find_key(hDB, 0, str, &hKey);
+      if (status != DB_SUCCESS) {
+        cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);     
+        return FE_ERR_ODB;
+      }
+
+      // Copy a C-structure to a ODB sub-tree
+      db_set_record(hDB, hKey, &amc13_link_odb[i], sizeof(AMC13_LINK_ODB), 0);
+
+      dbprintf("%s(%d): %s enabled %d\n", __func__, __LINE__, str, amc13_link_odb[i].enabled);
     }
-    status = db_check_record(hDB, 0, str, replace_str(AMC13_LINK_ODB_STR, "__subnet__", subnet_rep), TRUE);
+
+    sprintf(str,"/Equipment/AMC13%02d/Settings/AMC13",frontend_index);
+
+    // create ODB structure /Equipment/%s/Settings/AMC13 if doesn't exist
+    status = db_check_record(hDB, 0, str, AMC13_AMC13_ODB_STR, TRUE);
     if (status != DB_SUCCESS) {
       cm_msg(MERROR, __FILE__, "Cannot create [%s] entry in ODB, err = %i", str, status);
       ss_sleep(3000);
     }
-      
+    
     // returns key handle "hDB" to ODB name "str" for fast access 
     status = db_find_key(hDB, 0, str, &hKey);
     if (status != DB_SUCCESS) {
       cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);     
       return FE_ERR_ODB;
     }
+    
+    // Copy a set of keys from the ODB to the structure
+    db_set_record(hDB, hKey, &amc13_amc13_odb, sizeof(AMC13_AMC13_ODB), 0);
 
-    // Copy a C-structure to a ODB sub-tree
-    db_set_record(hDB, hKey, &amc13_link_odb[i], sizeof(AMC13_LINK_ODB), 0);
-
-    dbprintf("%s(%d): %s enabled %d\n", __func__, __LINE__, str, amc13_link_odb[i].enabled);
-  }
-
-  sprintf(str,"/Equipment/AMC13%02d/Settings/AMC13",frontend_index);
-
-  // create ODB structure /Equipment/%s/Settings/AMC13 if doesn't exist
-  status = db_check_record(hDB, 0, str, AMC13_AMC13_ODB_STR, TRUE);
-  if (status != DB_SUCCESS) {
-    cm_msg(MERROR, __FILE__, "Cannot create [%s] entry in ODB, err = %i", str, status);
-    ss_sleep(3000);
-  }
-  
-  // returns key handle "hDB" to ODB name "str" for fast access 
-  status = db_find_key(hDB, 0, str, &hKey);
-  if (status != DB_SUCCESS) {
-    cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);     
-    return FE_ERR_ODB;
-  }
-  
-  // Copy a set of keys from the ODB to the structure
-  db_set_record(hDB, hKey, &amc13_amc13_odb, sizeof(AMC13_AMC13_ODB), 0);
-
-  // FC7 crate
-  if (frontend_index == 0) {
-
+    // FC7 crate
     for (i = 0; i < 12; i++) {
       // /Settings/FC7-XX/Common
       sprintf(str, "/Equipment/AMC13%02d/Settings/FC7-%02d/Common", frontend_index, i+1);
@@ -405,32 +585,32 @@ INT amc13_ODB_set()
         cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);     
         return FE_ERR_ODB;
       }
-  
+
       // copy a C-structure to a ODB sub-tree
       db_set_record(hDB, hKey, &amc13_fc7_odb[i].encoder, sizeof(FC7_ODB_ENCODER), 0);
 
       // /Settings/FC7-XX/Trigger
       sprintf(str, "/Equipment/AMC13%02d/Settings/FC7-%02d/Trigger", frontend_index, i+1);
-       
+        
       // create ODB structure /Equipment/%s/Settings/FC7-%02d/Trigger if doesn't exist
       status = db_check_record(hDB, 0, str, FC7_ODB_TRIGGER_STR, TRUE);
       if (status != DB_SUCCESS) {
-         cm_msg(MERROR, __FILE__, "Cannot create [%s] entry in ODB, err = %i", str, status);
-         ss_sleep(3000);
+          cm_msg(MERROR, __FILE__, "Cannot create [%s] entry in ODB, err = %i", str, status);
+          ss_sleep(3000);
       }
-       
+        
       // returns key handle "hDB" to ODB name "str" for fast access
       status = db_find_key(hDB, 0, str, &hKey);
       if (status != DB_SUCCESS) {
-         cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);
-         return FE_ERR_ODB;
+          cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);
+          return FE_ERR_ODB;
       }
-       
-       // copy a C-structure to a ODB sub-tree
-       db_set_record(hDB, hKey, &amc13_fc7_odb[i].trigger, sizeof(FC7_ODB_TRIGGER), 0);
-       
+        
+        // copy a C-structure to a ODB sub-tree
+        db_set_record(hDB, hKey, &amc13_fc7_odb[i].trigger, sizeof(FC7_ODB_TRIGGER), 0);
+        
 
-       // /Settings/FC7-XX/Left Trigger Output
+        // /Settings/FC7-XX/Left Trigger Output
       sprintf(str, "/Equipment/AMC13%02d/Settings/FC7-%02d/Left Trigger Output", frontend_index, i+1);
       
       // create ODB structure /Equipment/%s/Settings/FC7-%02d/Left Trigger Output if doesn't exist
@@ -446,7 +626,7 @@ INT amc13_ODB_set()
         cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);     
         return FE_ERR_ODB;
       }
-  
+
       // copy a C-structure to a ODB sub-tree
       db_set_record(hDB, hKey, &amc13_fc7_odb[i].lotrig, sizeof(FC7_ODB_LEFT_OTRIG), 0);
 
@@ -466,7 +646,7 @@ INT amc13_ODB_set()
         cm_msg(MERROR, __FILE__, "Cannot find [%s] key in ODB, err = %i", str, status);     
         return FE_ERR_ODB;
       }
-  
+
       // copy a C-structure to a ODB sub-tree
       db_set_record(hDB, hKey, &amc13_fc7_odb[i].rotrig, sizeof(FC7_ODB_RIGHT_OTRIG), 0);
     }
@@ -513,9 +693,54 @@ INT amc13_ODB_set()
         db_set_record(hDB, hKey, &amc13_rider_odb[i].channel[j], sizeof(RIDER_ODB_CHANNEL), 0);
       }
     }
-
   }
+  
+  
+  // Now, we remove ODB settings that don't belong
+  sprintf(str,"/Equipment/AMC13%02d/Settings",frontend_index);
+  odb_settings = generateSubkeyListFromOdb(str,errorCode);
+  if (errorCode != 0 ) {
+    return FE_ERR_ODB;
+  }
+  std::vector<std::string> extraEntries = getMissingEntries(xml_settings,odb_settings);
+  
+  // Loop over the extraEntries vector and delete them
+  for (const std::string& entry : extraEntries) {
+      std::string entryPath = std::string(str) + "/" + std::string(entry);
+
+      // Delete the key in the ODB
+      midas::odb existing_bit(entryPath);
+      existing_bit.delete_key();
+
+      //std::cout << "Deleted key: " << entryPath << std::endl;
+  }
+  // Do same as above for Riders in TQ0y *y iterated over)
+  std::vector<std::string> xmlSettingsRidersOnly = filterRiders(xml_settings);
+  int itq;
+  for (itq = 0; itq < TQMETHOD_MAX; itq++) {
+    sprintf(str,"/Equipment/AMC13%02d/Settings/TQ%02d",frontend_index,itq+1);
+    std::vector<std::string> odbTqSettingsRidersOnly = filterRiders(generateSubkeyListFromOdb(str,errorCode));
+    if (errorCode != 0 ) {
+      return FE_ERR_ODB;
+    }
+    std::vector<std::string> extraRiders = getMissingEntries(xmlSettingsRidersOnly,odbTqSettingsRidersOnly);
+    for (const std::string& rider : extraRiders) {
+      std::string entryPath = std::string(str) + "/" + std::string(rider);
+
+      // Delete the key in the ODB
+      midas::odb existing_bit(entryPath);
+      existing_bit.delete_key();
+
+      //std::cout << "Deleted key: " << entryPath << std::endl;
+    }
+  }
+
+
+  
+  
+  /*
   // WFD5 crate
+  // This else statement was acting on if (frontend_index == 0)
   else {
 
     for (i = 0; i < 12; i++) {
@@ -562,7 +787,7 @@ INT amc13_ODB_set()
     }
 
   } // end AMC module select
-
+  */
   return SUCCESS;
 }
 

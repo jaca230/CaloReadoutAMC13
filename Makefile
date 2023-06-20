@@ -102,7 +102,7 @@ CXXFLAGS += -I/usr/include/pugixml
 LDFLAGS  = -L$(CUDASYS)/lib64 -L$(BOOST_ROOT)/lib -lboost_filesystem -lboost_system
 LDFLAGS += -L/opt/boost/lib -L/opt/cactus/lib
 LDFLAGS += -lboost_filesystem -lboost_regex -lboost_system -lboost_thread -lcactus_uhal_log -lcactus_uhal_grammars -lcactus_uhal_uhal
-LDFLAGS += -L/usr/lib64 -lpugixml
+LDFLAGS += -L/usr/lib64 -lpugixml -ldl
 
 # activate debug print statements
 ifeq ($(DEBUG),1)

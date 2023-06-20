@@ -1890,7 +1890,7 @@ INT frontend_init()
   }
 
   //Initialize ODB strucutre (?)
-  //amc13_ODB_set();
+  amc13_ODB_set();
  
   // initialize ODB structures for this frontend
   //status = cm_get_experiment_database(&hDB, NULL);

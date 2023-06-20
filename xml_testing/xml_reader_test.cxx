@@ -1,34 +1,85 @@
 #include <iostream>
+#include <string>
+#include <vector>
 #include <pugixml.hpp>
 
-int main() {
-    // Create an instance of pugi::xml_document
+std::vector<std::string> generateStringList(const std::string& xmlFilePath, int frontendIndex, int maxIterations) {
+    std::vector<std::string> stringList;
+
     pugi::xml_document doc;
+    pugi::xml_parse_result result = doc.load_file(xmlFilePath.c_str());
 
-    try {
-        // Load and parse the XML file
-        pugi::xml_parse_result result = doc.load_file("xml_test.xml");
+    if (!result) {
+        std::cerr << "Error parsing XML file: " << result.description() << std::endl;
+        return stringList;
+    }
 
-        // Check if the parsing was successful
-        if (!result) {
-            std::cerr << "Error parsing XML file: " << result.description() << std::endl;
-            return 1; // Return a non-zero value to indicate failure
+    pugi::xml_node frontend = doc.child("frontend");
+    int frontendIterations = 0;
+
+    while (frontend && frontendIterations < maxIterations) {
+        int id = frontend.attribute("id").as_int();
+
+        if (id == frontendIndex) {
+            break;
         }
 
-        // Access and print basic information from the XML file
-        std::cout << "Root node name: " << doc.first_child().name() << std::endl;
+        frontend = frontend.next_sibling("frontend");
+        frontendIterations++;
+    }
 
-        int numChildren = 0;
-        for (pugi::xml_node childNode : doc.first_child().children()) {
-            std::cout << "Child node name: " << childNode.name() << std::endl;
-            std::cout << "Child node value: " << childNode.child_value() << std::endl;
-            numChildren++;
+    if (!frontend) {
+        std::cout << "Frontend with the specified index not found." << std::endl;
+        return stringList;
+    }
+
+    pugi::xml_node slot = frontend.child("slot");
+    int slotIterations = 0;
+
+    while (slot && slotIterations < maxIterations) {
+        int slotId = slot.attribute("id").as_int();
+        std::string slotType = slot.attribute("type").as_string();
+        std::string slotString;
+
+        if (slotType == "FC7") {
+            slotString = "FC7-";
+            if (slotId < 10) {
+                slotString += "0";
+            }
+            slotString += std::to_string(slotId);
+        }
+        else if (slotType == "Rider" || slotType == "WFD") {
+            slotString = "Rider";
+            if (slotId < 10) {
+                slotString += "0";
+            }
+            slotString += std::to_string(slotId);
         }
 
-        std::cout << "Number of child nodes: " << numChildren << std::endl;
-    } catch (const std::exception& e) {
-        std::cerr << "Exception: " << e.what() << std::endl;
-        return 1; // Return a non-zero value to indicate failure
+        stringList.push_back(slotString);
+
+        slot = slot.next_sibling("slot");
+        slotIterations++;
+    }
+
+    return stringList;
+}
+
+int main() {
+    std::string xmlFilePath = "xml_test.xml";
+    int frontendIndex = 0;
+    int maxIterations = 1000;
+
+    std::vector<std::string> result = generateStringList(xmlFilePath, frontendIndex, maxIterations);
+
+    if (result.empty()) {
+        std::cout << "No slots found for the specified frontend index." << std::endl;
+    }
+    else {
+        std::cout << "Generated string list:" << std::endl;
+        for (const std::string& str : result) {
+            std::cout << str << std::endl;
+        }
     }
 
     return 0;

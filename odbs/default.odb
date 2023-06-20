@@ -1,0 +1,810 @@
+[/Experiment]
+ODB timeout = INT32 : 10000
+Protect ODB = BOOL : n
+Enable core dumps = BOOL : n
+
+[/Experiment/Security]
+Enable non-localhost RPC = BOOL : y
+
+[/Experiment/Security/RPC ports]
+mserver = UINT32 : 0
+mhttpd = UINT32 : 0
+Logger = UINT32 : 0
+ODBEdit = UINT32 : 0
+WD Frontend = UINT32 : 0
+WD Frontend1 = UINT32 : 0
+mserver1 = UINT32 : 0
+mhttpd1 = UINT32 : 0
+Logger1 = UINT32 : 0
+ODBEdit1 = UINT32 : 0
+
+[/Experiment/Security/RPC hosts]
+Allowed hosts = STRING[11] :
+[256] localhost
+[256] fe01
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+
+[/Experiment/Security]
+Disable RPC hosts check = BOOL : y
+
+[/Experiment/Buffer sizes]
+SYSMSG = UINT32 : 100000
+SYSTEM = UINT32 : 33554432
+
+[/Experiment]
+MAX_EVENT_SIZE = UINT32 : 4194304
+Name = STRING : [4] daq
+Midas server port = UINT32 : 1175
+Pause-Resume Buttons = BOOL : y
+
+[/Experiment/Menu]
+Status = BOOL : y
+Start = BOOL : n
+Transition = BOOL : y
+ODB = BOOL : y
+Messages = BOOL : y
+Chat = BOOL : y
+Elog = BOOL : y
+Alarms = BOOL : y
+Programs = BOOL : y
+Buffers = BOOL : y
+History = BOOL : y
+OldHistory = BOOL : y
+MSCB = BOOL : y
+Sequencer = BOOL : y
+Event Dump = BOOL : y
+Config = BOOL : y
+Example = BOOL : n
+Help = BOOL : y
+
+[/Experiment]
+Resources = STRING : [1] 
+Prevent start on alarms = BOOL : n
+Prevent start on required progs = BOOL : n
+Transition debug flag = INT32 : 0
+Transition connect timeout = INT32 : 10000
+Transition timeout = INT32 : 120000
+
+[/System/Clients/9201]
+Name = STRING : [32] mserver
+Host = STRING : [256] dhcp-10-163-105-238
+Hardware type = INT32 : 44
+Server Port = INT32 : 34023
+
+[/System/Clients/9204]
+Name = STRING : [32] mhttpd
+Host = STRING : [256] dhcp-10-163-105-238
+Hardware type = INT32 : 44
+Server Port = INT32 : 36651
+
+[/System/Clients/9207]
+Name = STRING : [32] Logger
+Host = STRING : [256] dhcp-10-163-105-238
+Hardware type = INT32 : 44
+Server Port = INT32 : 40098
+Transition START = INT32 : 200
+Transition STARTABORT = INT32 : 800
+Transition STOP = INT32 : 800
+Transition PAUSE = INT32 : 800
+Transition RESUME = INT32 : 200
+
+[/System/Clients/9255]
+Name = STRING : [32] ODBEdit
+Host = STRING : [256] dhcp-10-163-105-238
+Hardware type = INT32 : 44
+Server Port = INT32 : 41043
+
+[/System]
+Client Notify = INT32 : 0
+
+[/System/Buffers/SYSMSG]
+Size = DOUBLE : 100000
+Write pointer = DOUBLE : 20856
+Read pointer = DOUBLE : 0
+Filled = DOUBLE : 20856
+Filled pct = DOUBLE : 20.856
+
+[/System/Buffers/SYSMSG/Clients/mserver]
+count_lock = INT32 : 182
+count_sent = INT32 : 15
+bytes_sent = DOUBLE : 1840
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 18888
+bytes_used = DOUBLE : 1968
+pct_used = DOUBLE : 1.968
+last_updated = UINT32 : 2718454619
+
+[/System/Buffers/SYSMSG/Clients/mhttpd]
+count_lock = INT32 : 209
+count_sent = INT32 : 1
+bytes_sent = DOUBLE : 128
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 20728
+bytes_used = DOUBLE : 128
+pct_used = DOUBLE : 0.128
+last_updated = UINT32 : 2718454791
+
+[/System/Buffers/SYSMSG/Clients/Logger]
+count_lock = INT32 : 167
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 20856
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 2718454697
+
+[/System/Buffers/SYSMSG/Clients/ODBEdit]
+count_lock = INT32 : 405
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 20856
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 2718454915
+
+[/System/Buffers/SYSMSG/Clients/WD Frontend]
+count_lock = INT32 : 352
+count_sent = INT32 : 1
+bytes_sent = DOUBLE : 152
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 5456
+bytes_used = DOUBLE : 440
+pct_used = DOUBLE : 0.44
+last_updated = UINT32 : 699472058
+
+[/System/Buffers/SYSMSG/Clients/WD Frontend1]
+count_lock = INT32 : 11260
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 1768
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 1849261109
+
+[/System/Buffers/SYSMSG/Clients/mserver1]
+count_lock = INT32 : 2
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 6032
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 2369130004
+
+[/System/Buffers/SYSMSG/Clients/mhttpd1]
+count_lock = INT32 : 13
+count_sent = INT32 : 6
+bytes_sent = DOUBLE : 776
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 6304
+bytes_used = DOUBLE : 776
+pct_used = DOUBLE : 0.776
+last_updated = UINT32 : 2369130116
+
+[/System/Buffers/SYSMSG/Clients/Logger1]
+count_lock = INT32 : 6
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 6304
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 2369130019
+
+[/System/Buffers/SYSMSG/Clients/ODBEdit1]
+count_lock = INT32 : 62
+count_sent = INT32 : 2
+bytes_sent = DOUBLE : 280
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 2
+bytes_read = DOUBLE : 280
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 280
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 2355695381
+
+[/System/Buffers/SYSMSG]
+Last updated = UINT32 : 2718454915
+
+[/System/Buffers/SYSTEM]
+Size = DOUBLE : 33554432
+Write pointer = DOUBLE : 7936168
+Read pointer = DOUBLE : 0
+Filled = DOUBLE : 7936168
+Filled pct = DOUBLE : 23.65162372589111
+
+[/System/Buffers/SYSTEM/Clients/WD Frontend]
+count_lock = INT32 : 515
+count_sent = INT32 : 167
+bytes_sent = DOUBLE : 7936168
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 0
+bytes_used = DOUBLE : 7936168
+pct_used = DOUBLE : 23.65162372589111
+last_updated = UINT32 : 699472059
+
+[/System/Buffers/SYSTEM/Clients/Logger]
+count_lock = INT32 : 376
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 66
+bytes_read = DOUBLE : 3016960
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 7936168
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 699407031
+
+[/System/Buffers/SYSTEM/Clients/WD Frontend1]
+count_lock = INT32 : 11253
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 0
+bytes_used = DOUBLE : 0
+pct_used = DOUBLE : 0
+last_updated = UINT32 : 1849261109
+
+[/System/Buffers/SYSTEM/Clients/mhttpd]
+count_lock = INT32 : 425882
+count_sent = INT32 : 0
+bytes_sent = DOUBLE : 0
+count_write_wait = INT32 : 0
+time_write_wait = UINT32 : 0
+max_bytes_write_wait = INT32 : 0
+count_read = INT32 : 0
+bytes_read = DOUBLE : 0
+get_all_flag = BOOL : n
+read_pointer = DOUBLE : 4761632
+bytes_used = DOUBLE : 33509592
+pct_used = DOUBLE : 99.86636638641357
+last_updated = UINT32 : 2530614895
+
+[/System/Buffers/SYSTEM]
+Last updated = UINT32 : 699472059
+
+[/System]
+Prompt = STRING : [256] [%h:%e:%s]%p>
+
+[/System/Transition]
+transition = INT32 : 2
+run_number = INT32 : 172
+start_time = UINT32 : 699406018
+end_time = UINT32 : 699407121
+status = INT32 : 1
+error = STRING : [8] Success
+deferred = STRING : [1] 
+
+[/System/Transition/Clients/WD Frontend_500]
+sequence_number = INT32 : 500
+client_name = STRING : [12] WD Frontend
+host_name = STRING : [5] fe01
+port = INT32 : 45543
+init_time = UINT32 : 699406018
+waiting_for_client = STRING : [1] 
+connect_timeout = UINT32 : 10000
+connect_start_time = UINT32 : 699406019
+connect_end_time = UINT32 : 699406019
+rpc_timeout = UINT32 : 120000
+rpc_start_time = UINT32 : 699406020
+rpc_end_time = UINT32 : 699406937
+end_time = UINT32 : 699406937
+status = INT32 : 1
+error = STRING : [1] 
+last_updated = UINT32 : 699406937
+
+[/System/Transition/Clients/Logger_800]
+sequence_number = INT32 : 800
+client_name = STRING : [7] Logger
+host_name = STRING : [20] dhcp-10-163-105-238
+port = INT32 : 42353
+init_time = UINT32 : 699406018
+waiting_for_client = STRING : [12] 
+connect_timeout = UINT32 : 10000
+connect_start_time = UINT32 : 699407022
+connect_end_time = UINT32 : 699407022
+rpc_timeout = UINT32 : 120000
+rpc_start_time = UINT32 : 699407022
+rpc_end_time = UINT32 : 699407032
+end_time = UINT32 : 699407032
+status = INT32 : 1
+error = STRING : [1] 
+last_updated = UINT32 : 699407032
+
+[/Programs/mserver]
+Required = BOOL : n
+Watchdog timeout = INT32 : 10000
+Check interval = UINT32 : 180000
+Start command = STRING : [256] 
+Auto start = BOOL : n
+Auto stop = BOOL : n
+Auto restart = BOOL : n
+Alarm class = STRING : [32] 
+First failed = UINT32 : 0
+
+[/Programs/mhttpd]
+Required = BOOL : n
+Watchdog timeout = INT32 : 10000
+Check interval = UINT32 : 180000
+Start command = STRING : [256] 
+Auto start = BOOL : n
+Auto stop = BOOL : n
+Auto restart = BOOL : n
+Alarm class = STRING : [32] 
+First failed = UINT32 : 0
+
+[/Programs/Logger]
+Required = BOOL : n
+Watchdog timeout = INT32 : 10000
+Check interval = UINT32 : 180000
+Start command = STRING : [256] 
+Auto start = BOOL : n
+Auto stop = BOOL : n
+Auto restart = BOOL : n
+Alarm class = STRING : [32] 
+First failed = UINT32 : 0
+
+[/Programs/ODBEdit]
+Required = BOOL : n
+Watchdog timeout = INT32 : 10000
+Check interval = UINT32 : 180000
+Start command = STRING : [256] 
+Auto start = BOOL : n
+Auto stop = BOOL : n
+Auto restart = BOOL : n
+Alarm class = STRING : [32] 
+First failed = UINT32 : 0
+
+[/Programs/WD Frontend]
+Required = BOOL : n
+Watchdog timeout = INT32 : 10000
+Check interval = UINT32 : 180000
+Start command = STRING : [256] 
+Auto start = BOOL : n
+Auto stop = BOOL : n
+Auto restart = BOOL : n
+Alarm class = STRING : [32] 
+First failed = UINT32 : 1685982512
+
+[/Programs]
+Execute on start run = STRING : [256] 
+Execute on start abort = STRING : [256] 
+Execute on stop run = STRING : [256] 
+
+[/Logger]
+Data dir = STRING : [14] /root/online/
+Message file date format = STRING : [1] 
+Message dir = STRING : [1] 
+Write data = BOOL : y
+ODB Dump = BOOL : n
+ODB Dump File = STRING : [256] run%05d.json
+ODB Last Dump File = STRING : [256] last.json
+Auto restart = BOOL : n
+Auto restart delay = INT32 : 0
+Tape message = BOOL : y
+
+[/Logger/Channels/0/Settings]
+Active = BOOL : y
+Type = STRING : [8] Disk
+Filename = STRING : [256] run%05d.mid
+Format = STRING : [8] MIDAS
+Compression = INT32 : 0
+ODB dump = BOOL : y
+ODB dump format = STRING : [32] json
+Log messages = UINT32 : 0
+Buffer = STRING : [32] SYSTEM
+Event ID = INT32 : -1
+Trigger mask = INT32 : -1
+Event limit = DOUBLE : 0
+Byte limit = DOUBLE : 0
+Subrun Byte limit = DOUBLE : 0
+Tape capacity = DOUBLE : 0
+Subdir format = STRING : [32] 
+Current filename = STRING : [256] run00172.mid.lz4
+Data checksum = STRING : [256] CRC32C (one of: NONE CRC32C SHA256 SHA512 ZLIB)
+File checksum = STRING : [256] CRC32C (one of: NONE CRC32C SHA256 SHA512 ZLIB)
+Compress = STRING : [256] lz4 (one of: none gzip lz4 bzip2 pbzip2)
+Output = STRING : [256] FILE (one of: NULL FILE FTP ROOT PIPE)
+Gzip compression = UINT32 : 0
+Bzip2 compression = UINT32 : 0
+Pbzip2 num cpu = UINT32 : 0
+Pbzip2 compression = UINT32 : 0
+Pbzip2 options = STRING : [256] 
+
+[/Logger/Channels/0/Statistics]
+Events written = DOUBLE : 68
+Bytes written = DOUBLE : 167499
+Bytes written uncompressed = DOUBLE : 3180716
+Bytes written total = DOUBLE : 3011026554
+Bytes written subrun = DOUBLE : 167499
+Files written = DOUBLE : 78
+Disk level = DOUBLE : 0.4790443331704934
+
+[/Logger/Runlog/ASCII]
+Write data = BOOL : n
+filename = STRING : [80] runlog.log
+
+[/Logger/Runlog/ASCII/Links BOR]
+Run number = LINK : [20] /Runinfo/Run number
+Start time = LINK : [20] /Runinfo/Start time
+
+[/Logger/Runlog/ASCII/Links EOR]
+Stop time = LINK : [19] /Runinfo/Stop time
+
+[/Logger/History/MIDAS]
+Type = STRING : [6] MIDAS
+Active = BOOL : y
+Debug = INT32 : 0
+History dir = STRING : [1] 
+PerVariableHistory = INT32 : 0
+
+[/Logger/History/ODBC]
+Type = STRING : [5] ODBC
+Active = BOOL : n
+Debug = INT32 : 0
+Writer_ODBC_DSN = STRING : [15] history_writer
+Reader_ODBC_DSN = STRING : [15] history_reader
+
+[/Logger/History/SQLITE]
+Type = STRING : [7] SQLITE
+Active = BOOL : n
+Debug = INT32 : 0
+History dir = STRING : [1] 
+
+[/Logger/History/MYSQL]
+Type = STRING : [6] MYSQL
+Active = BOOL : n
+Debug = INT32 : 0
+MYSQL Writer = STRING : [17] mysql_writer.txt
+MYSQL Reader = STRING : [17] mysql_reader.txt
+
+[/Logger/History/FILE]
+Type = STRING : [5] FILE
+Active = BOOL : n
+Debug = INT32 : 0
+History dir = STRING : [1] 
+
+[/Logger]
+History dir = STRING : [1] 
+Run duration = UINT32 : 0
+Next subrun = BOOL : n
+Subrun duration = UINT32 : 0
+
+[/Runinfo]
+State = INT32 : 1
+Online Mode = INT32 : 1
+Run number = INT32 : 172
+Transition in progress = INT32 : 0
+Start abort = INT32 : 0
+Requested transition = INT32 : 0
+Start time = STRING : [32] Tue Mar 28 15:26:37 2023
+Start time binary = UINT32 : 1680031597
+Stop time = STRING : [32] Tue Mar 28 15:26:58 2023
+Stop time binary = UINT32 : 1680031618
+
+[/Alarms]
+Alarm system active = BOOL : y
+
+[/Alarms/Alarms/Demo ODB]
+Active = BOOL : n
+Triggered = INT32 : 0
+Type = INT32 : 3
+Check interval = INT32 : 60
+Checked last = UINT32 : 0
+Time triggered first = STRING : [32] 
+Time triggered last = STRING : [32] 
+Condition = STRING : [256] /Runinfo/Run number > 100
+Alarm Class = STRING : [32] Alarm
+Alarm Message = STRING : [80] Run number became too large
+
+[/Alarms/Alarms/Demo periodic]
+Active = BOOL : n
+Triggered = INT32 : 0
+Type = INT32 : 4
+Check interval = INT32 : 28800
+Checked last = UINT32 : 1655400451
+Time triggered first = STRING : [32] 
+Time triggered last = STRING : [32] 
+Condition = STRING : [256] 
+Alarm Class = STRING : [32] Warning
+Alarm Message = STRING : [80] Please do your shift checks
+
+[/Alarms/Classes/Alarm]
+Write system message = BOOL : y
+Write Elog message = BOOL : n
+System message interval = INT32 : 60
+System message last = UINT32 : 0
+Execute command = STRING : [256] 
+Execute interval = INT32 : 0
+Execute last = UINT32 : 0
+Stop run = BOOL : n
+Display BGColor = STRING : [32] red
+Display FGColor = STRING : [32] black
+
+[/Alarms/Classes/Warning]
+Write system message = BOOL : y
+Write Elog message = BOOL : n
+System message interval = INT32 : 60
+System message last = UINT32 : 0
+Execute command = STRING : [256] 
+Execute interval = INT32 : 0
+Execute last = UINT32 : 0
+Stop run = BOOL : n
+Display BGColor = STRING : [32] red
+Display FGColor = STRING : [32] black
+
+[/Elog]
+External Elog = BOOL : n
+URL = STRING : [1] 
+Allow delete = BOOL : n
+Allow edit = BOOL : n
+Buttons = STRING[3] :
+[32] 8h
+[32] 24h
+[32] 7d
+Types = STRING[20] :
+[32] Routine
+[32] Shift summary
+[32] Minor error
+[32] Severe error
+[32] Fix
+[32] Question
+[32] Info
+[32] Modification
+[32] Reply
+[32] Alarm
+[32] Test
+[32] Other
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+Systems = STRING[20] :
+[32] General
+[32] DAQ
+[32] Detector
+[32] Electronics
+[32] Target
+[32] Beamline
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+[32] 
+Host name = STRING : [1] 
+
+[/WebServer]
+Enable localhost port = BOOL : y
+localhost port = INT32 : 8080
+localhost port passwords = BOOL : n
+Enable insecure port = BOOL : n
+insecure port = INT32 : 8081
+insecure port passwords = BOOL : y
+insecure port host list = BOOL : y
+Enable https port = BOOL : n
+https port = INT32 : 8443
+https port passwords = BOOL : y
+https port host list = BOOL : n
+Host list = STRING[10] :
+[256] localhost
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+[256] 
+Enable IPv6 = BOOL : y
+
+[/WebServer/Proxy]
+example = STRING : [23] #http://localhost:8080
+
+[/WebServer/mime.types]
+.HTML = STRING : [10] text/html
+.HTM = STRING : [10] text/html
+.CSS = STRING : [9] text/css
+.TXT = STRING : [11] text/plain
+.ASC = STRING : [11] text/plain
+.ICO = STRING : [13] image/x-icon
+.GIF = STRING : [10] image/gif
+.JPG = STRING : [11] image/jpeg
+.JPEG = STRING : [11] image/jpeg
+.PNG = STRING : [10] image/png
+.SVG = STRING : [14] image/svg+xml
+.BMP = STRING : [10] image/bmp
+.MP3 = STRING : [11] audio/mpeg
+.OGG = STRING : [10] audio/ogg
+.MID = STRING : [11] audio/midi
+.WAV = STRING : [10] audio/wav
+.XML = STRING : [16] application/xml
+.JS = STRING : [23] application/javascript
+.MJS = STRING : [23] application/javascript
+.JSON = STRING : [17] application/json
+.PS = STRING : [23] application/postscript
+.EPS = STRING : [23] application/postscript
+.PDF = STRING : [16] application/pdf
+.ZIP = STRING : [16] application/zip
+.XLS = STRING : [22] application/x-msexcel
+.DOC = STRING : [19] application/msword
+
+[/History/Links/System]
+Trigger per sec. = LINK : [46] /Equipment/Trigger/Statistics/Events per sec.
+Trigger kB per sec. = LINK : [46] /Equipment/Trigger/Statistics/kBytes per sec.
+
+[/History/Events]
+2 = STRING : [9] Periodic
+101 = STRING : [7] System
+0 = STRING : [16] Run transitions
+
+[/History]
+DisableTags = BOOL : n
+
+[/History/Tags]
+2 = STRING[2] :
+[96] Periodic
+[96] 6[1] SCLR
+101 = STRING[3] :
+[96] System
+[96] 10[1] Trigger per sec.
+[96] 10[1] Trigger kB per sec.
+0 = STRING[3] :
+[96] Run transitions
+[96] 6[1] State
+[96] 6[1] Run number
+
+[/History/Display/Default/Trigger rate]
+Variables = STRING[2] :
+[32] System:Trigger per sec.
+[32] '
+Time Scale = STRING : [32] 1h
+Timescale = STRING : [32] 1h
+Zero ylow = BOOL : y
+Show run markers = BOOL : y
+Formula = STRING[2] :
+[64] 
+[64] 
+
+[/Equipment/Trigger/Common]
+Event ID = UINT16 : 1
+Trigger mask = UINT16 : 0
+Buffer = STRING : [32] SYSTEM
+Type = INT32 : 2
+Source = INT32 : 0
+Format = STRING : [8] MIDAS
+Enabled = BOOL : y
+Read on = INT32 : 1
+Period = INT32 : 100
+Event limit = DOUBLE : 0
+Num subevents = UINT32 : 0
+Log history = INT32 : 0
+Frontend host = STRING : [32] fe01
+Frontend name = STRING : [32] WD Frontend
+Frontend file name = STRING : [256] /root/packages/experiment/wdfe/wdfe.cxx
+Status = STRING : [256] WD Frontend@fe01
+Status color = STRING : [32] greenLight
+Hidden = BOOL : n
+Write cache size = INT32 : 0
+
+[/Equipment/Trigger/Statistics]
+Events sent = DOUBLE : 45
+Events per sec. = DOUBLE : 0
+kBytes per sec. = DOUBLE : 0
+
+[/Equipment/Trigger/Settings]
+
+[/Equipment/Periodic/Common]
+Event ID = UINT16 : 2
+Trigger mask = UINT16 : 0
+Buffer = STRING : [32] SYSTEM
+Type = INT32 : 1
+Source = INT32 : 0
+Format = STRING : [8] MIDAS
+Enabled = BOOL : y
+Read on = INT32 : 377
+Period = INT32 : 1000
+Event limit = DOUBLE : 0
+Num subevents = UINT32 : 0
+Log history = INT32 : 1
+Frontend host = STRING : [32] fe01
+Frontend name = STRING : [32] WD Frontend
+Frontend file name = STRING : [256] /root/packages/experiment/wdfe/wdfe.cxx
+Status = STRING : [256] WD Frontend@fe01
+Status color = STRING : [32] greenLight
+Hidden = BOOL : n
+Write cache size = INT32 : 0
+
+[/Equipment/Periodic/Variables]
+SCLR = UINT32 : 0
+
+[/Equipment/Periodic/Statistics]
+Events sent = DOUBLE : 21
+Events per sec. = DOUBLE : 0
+kBytes per sec. = DOUBLE : 0
+

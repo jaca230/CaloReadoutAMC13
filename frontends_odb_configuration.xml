@@ -1,0 +1,19 @@
+<!-- The purpose of this file is to specify what devices are in each frontend crate -->
+<!-- To declare frontend AMC130x create root node <frontend id="x"> -->
+<!-- To declare device in slot 'y' of create, create node <slot id="y" type="device_type" -->
+<!-- Select "device_type" from FC7, WFD, or Rider (WFD and Rider are the same device) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<frontend id="0">
+    <slot id="1" type="FC7" />
+    <slot id="2" type="FC7" />
+    <slot id="3" type="WFD" />
+    <slot id="4" type="WFD" />
+    <slot id="5" type="WFD" />
+    <slot id="6" type="FC7" />
+    <slot id="7" type="WFD" />
+    <slot id="8" type="WFD" />
+    <slot id="9" type="WFD" />
+    <slot id="10" type="WFD" />
+    <slot id="11" type="WFD" />
+    <slot id="12" type="WFD" />
+</frontend>
